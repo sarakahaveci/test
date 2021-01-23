@@ -4,7 +4,7 @@ import { ToasterConfig } from 'angular2-toaster';
 import { Observable } from 'rxjs';
 
 import { CreditCardState } from './component/credit/credit.module';
-import { CCreditCardPaymentFacade } from './store/facade';
+import { CreditCardPaymentFacade } from './store/facade';
 
 @Component({
   selector: 'app-root',
@@ -16,7 +16,7 @@ export class AppComponent implements OnInit {
   toasterConfig: ToasterConfig;
   creditCard$: Observable<CreditCardState>;
 
-  constructor(private router: Router, private creditCardPaymentFacade: CCreditCardPaymentFacade) {
+  constructor(private router: Router, private creditCardPaymentFacade: CreditCardPaymentFacade) {
 
     this.toasterConfig = new ToasterConfig({
       showCloseButton: true,

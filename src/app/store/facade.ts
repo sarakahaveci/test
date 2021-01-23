@@ -6,7 +6,7 @@ import { load, payWithCard, payWithCardSuccess } from './action'
 import { CreditCardQuery } from './selectors';
 
 @Injectable()
-export class CCreditCardPaymentFacade {
+export class CreditCardPaymentFacade {
   readonly data$: Observable<CreditCardState>;
 
   constructor(private store: Store) {

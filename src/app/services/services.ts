@@ -17,7 +17,7 @@ export class PaymentService {
   makePayment(paymentData): Observable<any> {
     const response = {
       status: 'success',
-      message: 'Payment processed successfully!',
+      message: 'Your Payment Done',
     };
     return of(new HttpResponse({ status: 200, body: response }));
   }

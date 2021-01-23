@@ -57,10 +57,10 @@ export class CreditCardPaymentStoreEffects {
               this.toasterService.pop(
                 'error',
                 'FAILURE',
-                'Your payment Failed please try again later'
+                'Your Payment Failed'
               );
               returnedAction = payWithCardError({
-                error: 'Something went wrong please try again',
+                error: 'Something went wrong',
               });
             }
             return returnedAction;

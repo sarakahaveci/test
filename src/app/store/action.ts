@@ -1,6 +1,6 @@
 
 import { createAction, props } from '@ngrx/store';
-import { CreditCardState } from '../component/credit/credit.module';
+import * as creditModule from '../component/credit/credit.module';
 
 export enum CreditCardPaymentActionType {
   LOAD_CREDIT_CARD = '[CreditCardPayment] Load',
@@ -15,17 +15,17 @@ export const load = createAction(CreditCardPaymentActionType.LOAD_CREDIT_CARD);
 
 export const loadSuccess = createAction(
   CreditCardPaymentActionType.LOAD_CREDIT_CARD_SUCCESS,
-  props<{ creditCardData: CreditCardState }>()
+  props<{ creditCardData: creditModule.CreditCardState }>()
 );
 
 export const payWithCard = createAction(
   CreditCardPaymentActionType.PAY_WITH_CARD,
-  props<{ paymentData: CreditCardState }>()
+  props<{ paymentData: creditModule.CreditCardState }>()
 );
 
 export const payWithCardSuccess = createAction(
   CreditCardPaymentActionType.PAY_WITH_CARD_SUCCESS,
-  props<{ creditCardData: CreditCardState }>()
+  props<{ creditCardData: creditModule.CreditCardState }>()
 );
 
 export const payWithCardError = createAction(
@@ -35,4 +35,6 @@ export const payWithCardError = createAction(
 
 
 export const refresh = createAction(CreditCardPaymentActionType.REFRESH);
+
+
 

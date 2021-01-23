@@ -12,11 +12,11 @@ import { PaymentService } from './services/services';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { ToasterModule, ToasterService } from 'angular2-toaster';
-import { CCreditCardPaymentFacade } from './store/facade';
 import { CommonModule } from '@angular/common';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from '../environments/environment';
-import { CardPaymentComponent } from './store/card-payment';
+import { CreditCardPaymentFacade } from './store/facade';
+import { CardPaymentComponent } from "./store/CardPaymentComponent.1";
 
 @NgModule({
   declarations: [
@@ -40,7 +40,7 @@ import { CardPaymentComponent } from './store/card-payment';
     EffectsModule.forFeature([CreditCardPaymentStoreEffects]),
     StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production })
   ],
-  providers: [PaymentService, ToasterService, CCreditCardPaymentFacade, CreditCardPaymentStoreEffects],
+  providers: [PaymentService, ToasterService, CreditCardPaymentFacade, CreditCardPaymentStoreEffects],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
