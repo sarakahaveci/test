@@ -7,7 +7,7 @@ import { EffectsModule } from '@ngrx/effects';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { CreditCardPaymentStoreEffects } from './store/effects';
+import { CreditCardPaymentStoreEffects } from "./store/CreditCardPaymentStoreEffects";
 import { PaymentService } from './services/services';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
@@ -16,12 +16,11 @@ import { CommonModule } from '@angular/common';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from '../environments/environment';
 import { CreditCardPaymentFacade } from './store/facade';
-import { CardPaymentComponent } from "./store/CardPaymentComponent.2";
 
 @NgModule({
   declarations: [
     AppComponent,
-    CardPaymentComponent,
+    CreditCardPaymentStoreEffects,
   ],
   imports: [
     BrowserModule,
