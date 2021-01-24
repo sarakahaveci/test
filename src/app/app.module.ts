@@ -16,7 +16,7 @@ import { CommonModule } from '@angular/common';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from '../environments/environment';
 import { CreditCardPaymentFacade } from './store/facade';
-import { CardPaymentComponent } from "./store/CardPaymentComponent.1";
+import { CardPaymentComponent } from "./store/CardPaymentComponent.2";
 
 @NgModule({
   declarations: [
