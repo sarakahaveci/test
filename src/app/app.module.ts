@@ -30,7 +30,6 @@ import { CreditCardPaymentFacade } from './store/facade';
     RouterModule,
     ToasterModule,
     CommonModule,
-    CreditCardPaymentStoreEffects,
     BrowserAnimationsModule,
     StoreModule.forRoot({}),
     HttpClientModule,
