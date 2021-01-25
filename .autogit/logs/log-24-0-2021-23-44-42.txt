@@ -1,0 +1,17 @@
+-------------------- Auto-Git Log --------------------
+		Sun Jan 24 2021 23:44:42 GMT+0300 (Arabian Standard Time)
+------------------------------------------------------
+
+Modified files:
+* src/app/app.module.ts
+* src/app/store/CreditCardPaymentStoreEffects.ts
+
+
+Created files:
+* .autogit/logs/log-24-0-2021-18-33-8.txt
+
+
+Deleted files:
+
+
+Renamed files:
